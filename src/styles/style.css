@@ -1,0 +1,272 @@
+#app-login-btn {
+  width: 160px;
+}
+
+html {
+  background: #01b1a8;
+}
+
+.bg-light {
+  --bs-bg-opacity: 0;
+  background-color: none;
+}
+
+.dropdown {
+  position: absolute;
+  right: 5%;
+  display: none;
+}
+
+.dropbtn {
+  background-color: gray;
+  color: white;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.avatar {
+  position: absolute;
+  right: 10%;
+  top: 5px;
+  display: none;
+}
+
+.welcome {
+  position: absolute;
+  right: 14%;
+  top: 25%;
+  color: white;
+  font-size: 17px;
+  display: none;
+}
+
+.avatar2 {
+  position: absolute;
+  right: 10%;
+  top: 5px;
+  display: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.arrowUp {display: none; fill: white;}
+
+.arrowDown {
+  fill: white;
+  transform: rotate(90deg);
+  width: 15px;
+  height: 15px;
+}
+
+.arrowUp {
+  fill: white;
+  transform: rotate(270deg);
+  width: 15px;
+  height: 15px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .arrowDown {display: none;}
+
+.dropdown:hover .arrowUp {display: inline;}
+
+.dropdown:hover .dropbtn {background-color: rgb(168, 168, 168);}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+
+.container {
+  width: 100%;
+  height: 700px;
+  min-width: 50%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.kanban-heading-text {
+  font-size: 1.8rem;
+  background-color: tomato;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.kanban-board {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+.kanban-block {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0.6rem;
+  width: 100%;
+  min-width: 14rem;
+  min-height: 4.5rem;
+  border-radius: 1rem;
+  margin: 10px;
+}
+
+#user {
+  background-color: #e2e3e7;
+}
+
+#backlog {
+  background-color: #EBECF0;
+}
+
+#ready {
+  background-color: #fedada;
+}
+
+#inProgress {
+  background-color: #fdfdd7;
+}
+
+#finished {
+  background-color: #c6fde2;
+}
+
+#inprogress {
+  background-color: #fcfccb;
+}
+
+.task {
+  background-color: white;
+  margin: 0.2rem 0rem 0.3rem 0rem;
+  border-radius: 10px;
+  padding: 0.5rem 0.2rem 0.5rem 10px;
+}
+
+.user {
+  background-color: white;
+  margin: 0.2rem 0rem 0.3rem 0rem;
+  border-radius: 10px;
+  padding: 0.5rem 0.2rem 0.5rem 10px;
+}
+
+.task:hover {
+  cursor: pointer;
+}
+
+.user:hover {
+  cursor: pointer;
+}
+
+.task-button-block {
+  order: 2;
+  margin-bottom: auto;
+}
+
+.user-button-block {
+  order: 3;
+  margin-bottom: auto;
+}
+
+#task-button, 
+#user-button {
+  color: #5E6C84;
+  background-color: #EBECF0;
+  text-align: left;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.create-new-task-block {
+  display: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.2rem 0.5rem 10px;
+  /* display: flex; */
+  background: #EBECF0;
+  width: 64.4%;
+  flex-direction: column;
+}
+
+.create-new-task-block-user {
+  display: flex;
+  border-radius: 10px;
+  padding: 0.5rem 0.2rem 0.5rem 10px;
+  /* display: flex; */
+  background: #EBECF0;
+  width: 64.4%;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0.2rem;
+}
+
+.form-row-label {
+  width: 15%;
+  padding: 0.2rem;
+  padding-right: 0.5rem;
+  border: 0.1rem solid black;
+  border-right: 0;
+  border-radius: 0.2rem 0rem 0rem 0.2rem;
+}
+
+.form-row-input {
+  border: 0.1rem solid black;
+  border-radius: 0rem 0.2rem 0.2rem 0rem;
+  width: 500px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-row-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.2rem;
+}
+
+#delete-button,
+#save-button,
+#cancel-button,
+#save-button-user,
+#cancel-button-user {
+  margin: 0.2rem 0rem 0.1rem 0rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 49.2%;
+  padding: 0.5rem 2.7rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}

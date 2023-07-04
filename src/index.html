@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple TODO App</title>
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SimpleTODO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    </li>
+                </ul>
+                <form id="app-login-form" class="d-flex"> 
+                    <img class ="avatar" src="./styles/avatar.svg" width="45" height="45">
+                    <img class ="avatar2" src="./styles/avatar2.svg" width="45" height="45">
+                    <p class="welcome">Текст</p>
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu
+                            <svg class="arrowDown" viewBox="0 0 5 9">
+                                <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                            </svg>
+                            <svg class="arrowUp" viewBox="0 0 5 9">
+                                <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                            </svg>
+                        </button>
+                        
+                        <div class="dropdown-content">
+                          <a href="#">My account</a>
+                          <a href="#">My tasks</a>
+                          <a href="./index.html">Log out</a>
+                        </div>
+                      </div>
+                    <input id="form" class="form-control me-1" name="login" autocomplete="username" type="text"
+                        placeholder="Login" aria-label="Login">
+                    <input id="form2" class="form-control me-2" name="password" autocomplete="current-password" type="password"
+                        placeholder="Password" aria-label="Password">
+                    <button id="app-login-btn" class="btn btn-outline-info" type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <p id="content" class="p">Please Sign In to see your tasks!</p>
+    </div>
+
+</body>
+
+</html>
